@@ -11,7 +11,7 @@ import {
   Wallet,
   X,
 } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Hex } from 'viem';
 import {
   useAccount,
@@ -26,7 +26,7 @@ import {
 } from 'wagmi';
 import { base } from 'wagmi/chains';
 import { colorDropAbi, contractAddress } from '@/lib/abi';
-import { dataSuffix } from '@/lib/wagmi';
+import { buildCode, dataSuffix } from '@/lib/wagmi';
 
 const COLORS = [
   { id: 0, name: 'Blue', hex: '#0052ff', text: '#ffffff' },
@@ -68,6 +68,16 @@ export function ColorDropApp() {
   } = useWaitForTransactionReceipt({ hash });
 
   const activeColor = COLORS[selectedColor];
+  const walletConnectors = useMemo(() => {
+    const seen = new Set<string>();
+
+    return connectors.filter((availableConnector) => {
+      const key = availableConnector.name.trim().toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }, [connectors]);
   const isWrongNetwork = isConnected && chainId !== base.id;
   const canRead = Boolean(contractAddress);
   const actionLabel = !isConnected
@@ -226,7 +236,7 @@ export function ColorDropApp() {
         <section className="border-b-2 border-ink" aria-label="Wallet Status">
           <Metric label="Wallet Status" value={isConnected ? formatAddress(address) : 'Disconnected'} note={connector?.name ?? 'Choose a wallet'} />
           <Metric label="Contract" value={contractAddress ? 'Configured' : 'Missing'} note={contractAddress ?? 'Set NEXT_PUBLIC_CONTRACT_ADDRESS'} />
-          <Metric label="Attribution" value={dataSuffix !== '0x' ? 'Enabled' : 'Pending'} note="Explicit dataSuffix on every write" last />
+          <Metric label="Attribution" value={dataSuffix !== '0x' ? 'Enabled' : 'Pending'} note={buildCode} last />
         </section>
 
         <section className="border-b-2 border-ink md:col-start-3" aria-label="Wallet Connect">
@@ -242,7 +252,7 @@ export function ColorDropApp() {
 
             {walletOpen && (
               <div className="absolute left-0 right-0 top-full z-20 border-x-2 border-b-2 border-ink bg-paper">
-                {connectors.map((availableConnector) => (
+                {walletConnectors.map((availableConnector) => (
                   <button
                     key={availableConnector.uid}
                     type="button"
