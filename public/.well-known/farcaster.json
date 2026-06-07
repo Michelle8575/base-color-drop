@@ -1,0 +1,41 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "baseBuilder": {
+    "ownerAddress": "0x0000000000000000000000000000000000000000"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Base Color Drop",
+    "homeUrl": "https://REPLACE_WITH_DOMAIN",
+    "iconUrl": "https://REPLACE_WITH_DOMAIN/icon.png",
+    "splashImageUrl": "https://REPLACE_WITH_DOMAIN/splash.png",
+    "splashBackgroundColor": "#ffffff",
+    "subtitle": "Onchain color vote",
+    "description": "Connect a wallet, choose a color, and drop your latest vote on Base.",
+    "primaryCategory": "art-creativity",
+    "tags": [
+      "base",
+      "color",
+      "vote",
+      "onchain"
+    ],
+    "heroImageUrl": "https://REPLACE_WITH_DOMAIN/miniapp-preview.png",
+    "tagline": "Drop color on Base",
+    "ogTitle": "Base Color Drop",
+    "ogDescription": "Vote your latest onchain color on Base.",
+    "ogImageUrl": "https://REPLACE_WITH_DOMAIN/miniapp-preview.png",
+    "screenshotUrls": [
+      "https://REPLACE_WITH_DOMAIN/screenshot.png"
+    ],
+    "requiredChains": [
+      "eip155:8453"
+    ],
+    "requiredCapabilities": [
+      "actions.ready"
+    ]
+  }
+}
