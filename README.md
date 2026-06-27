@@ -123,3 +123,12 @@ The app should load with the configured contract address and environment values.
 ## Usage
 
 1. Deploy `contracts/BaseColorDrop.sol` on Base.
+2. Configure `.env.local`.
+3. Update Base app metadata in `app/layout.tsx`.
+4. Update the Farcaster well-known configuration after domain signing.
+5. Start the development server.
+6. Open the app and submit a color vote.
+
+## Attribution Details
+
+Offchain attribution is configured in `app/layout.tsx` using the `base:app_id` meta tag.
