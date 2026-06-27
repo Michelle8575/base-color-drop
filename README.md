@@ -59,3 +59,13 @@ Before running the project, make sure you have:
 ## Setup
 
 Clone the repository:
+
+```bash
+git clone https://github.com/Michelle8575/base-color-drop.git
+cd base-color-drop
+```
+
+Install dependencies:
+
+```bash
+npm install
