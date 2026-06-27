@@ -148,3 +148,13 @@ Make sure the contract address matches the network used by the app.
 If the deployed contract changes, update `NEXT_PUBLIC_CONTRACT_ADDRESS`.
 
 If Base Builder Code values change, update `NEXT_PUBLIC_DATA_SUFFIX`.
+
+## Available Scripts
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
