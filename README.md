@@ -7,3 +7,11 @@ The project lets users choose a color and submit that choice onchain through a l
 There are no rewards or incentives attached to voting.
 
 Repository: https://github.com/Michelle8575/base-color-drop.git
+
+## Overview
+
+BaseColorDrop is built as a small, focused Mini App for collecting color votes on Base.
+
+The app includes a frontend built with Next.js and a Solidity contract located in the `contracts` directory.
+
+It is intended to be easy to run locally, configure for deployment, and connect to a deployed contract.
