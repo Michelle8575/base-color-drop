@@ -87,3 +87,11 @@ NEXT_PUBLIC_BASE_BUILDER_OWNER=
 ```
 
 Set `NEXT_PUBLIC_CONTRACT_ADDRESS` to the address of your deployed `BaseColorDrop.sol` contract.
+
+Set `NEXT_PUBLIC_DATA_SUFFIX` after the Base Builder Code value is available.
+
+Set `NEXT_PUBLIC_APP_URL` to the public URL where the app will be hosted.
+
+Set `NEXT_PUBLIC_BASE_BUILDER_OWNER` to the appropriate Base Builder owner value for your deployment.
+
+## Base and Farcaster Configuration
