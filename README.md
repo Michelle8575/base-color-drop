@@ -42,3 +42,11 @@ It is intended to be easy to run locally, configure for deployment, and connect 
 ```text
 app/                    Next.js App Router files
 contracts/              Solidity contract source
+lib/                    Shared app configuration and utilities
+public/                 Static assets and well-known configuration
+.env.example            Example environment configuration
+```
+
+## Prerequisites
+
+Before running the project, make sure you have:
