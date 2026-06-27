@@ -78,3 +78,12 @@ cp .env.example .env.local
 ```
 
 Update `.env.local` with the required values:
+
+```env
+NEXT_PUBLIC_CONTRACT_ADDRESS=
+NEXT_PUBLIC_DATA_SUFFIX=
+NEXT_PUBLIC_APP_URL=
+NEXT_PUBLIC_BASE_BUILDER_OWNER=
+```
+
+Set `NEXT_PUBLIC_CONTRACT_ADDRESS` to the address of your deployed `BaseColorDrop.sol` contract.
