@@ -15,3 +15,13 @@ BaseColorDrop is built as a small, focused Mini App for collecting color votes o
 The app includes a frontend built with Next.js and a Solidity contract located in the `contracts` directory.
 
 It is intended to be easy to run locally, configure for deployment, and connect to a deployed contract.
+
+## Features
+
+- Onchain color voting on Base
+- Mini App structure
+- Next.js App Router frontend
+- TypeScript support
+- Wallet and contract interaction through Wagmi and Viem
+- Tailwind CSS styling
+- Environment-based configuration
