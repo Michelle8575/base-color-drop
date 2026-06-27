@@ -166,3 +166,13 @@ npm run dev
 ## Deployment Notes
 
 Before deploying the frontend, confirm that all public environment variables are set.
+
+Confirm that the Base app metadata has been replaced with deployment-specific values.
+
+Confirm that the Farcaster well-known file has been updated after domain signing.
+
+Confirm that contract writes include the configured `dataSuffix`.
+
+## License
+
+No license information is included in the original project README.
