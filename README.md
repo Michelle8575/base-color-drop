@@ -95,3 +95,13 @@ Set `NEXT_PUBLIC_APP_URL` to the public URL where the app will be hosted.
 Set `NEXT_PUBLIC_BASE_BUILDER_OWNER` to the appropriate Base Builder owner value for your deployment.
 
 ## Base and Farcaster Configuration
+
+Update the Base app metadata in `app/layout.tsx`.
+
+The file includes a hardcoded `<meta name="base:app_id" ... />` value that should be replaced for your deployment.
+
+Update the Farcaster domain association file at:
+
+```text
+public/.well-known/farcaster.json
+```
