@@ -132,3 +132,11 @@ The app should load with the configured contract address and environment values.
 ## Attribution Details
 
 Offchain attribution is configured in `app/layout.tsx` using the `base:app_id` meta tag.
+
+Onchain attribution is configured in `lib/wagmi.ts` through `dataSuffix`.
+
+Each `writeContract` call explicitly passes `dataSuffix`.
+
+## Development Notes
+
+Keep `.env.local` out of version control.
