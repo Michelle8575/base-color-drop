@@ -35,3 +35,12 @@ The app is designed to be easy to run locally, configure for deployment, and con
 - App Router
 - Wagmi
 - Viem
+- Tailwind CSS
+- Solidity
+
+## Repository Structure
+
+```text
+app/                    Next.js App Router files
+contracts/              Solidity contract source
+lib/                    Shared app configuration and utilities
