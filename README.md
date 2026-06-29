@@ -162,3 +162,13 @@ npm install
 ```
 
 Run the development server:
+
+```bash
+npm run dev
+```
+
+## Deployment Checklist
+
+Before deploying the frontend, confirm that:
+
+- All public environment variables are set.
