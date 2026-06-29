@@ -116,3 +116,13 @@ Start the development server:
 ```bash
 npm run dev
 ```
+
+Open the local development URL shown in your terminal.
+
+The app should load using the configured contract address and environment values.
+
+## Usage
+
+1. Deploy `contracts/BaseColorDrop.sol` on Base.
+2. Configure `.env.local` with your deployment values.
+3. Update the Base app metadata in `app/layout.tsx`.
