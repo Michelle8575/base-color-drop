@@ -108,3 +108,11 @@ public/.well-known/farcaster.json
 ```
 
 Replace the placeholder association data after signing the domain in Base Build Preview.
+
+## Running Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
