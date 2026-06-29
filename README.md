@@ -144,3 +144,13 @@ Each `writeContract` call explicitly passes `dataSuffix`.
 Keep `.env.local` out of version control.
 
 Use `.env.example` as the shared reference for required configuration values.
+
+Make sure the contract address matches the network used by the app.
+
+If the deployed contract changes, update `NEXT_PUBLIC_CONTRACT_ADDRESS`.
+
+If Base Builder Code values change, update `NEXT_PUBLIC_DATA_SUFFIX`.
+
+Review deployment-specific metadata before publishing the app.
+
+## Available Scripts
