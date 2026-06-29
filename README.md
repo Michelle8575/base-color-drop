@@ -53,3 +53,12 @@ public/                 Static assets and well-known configuration
 Before running the project, make sure you have:
 
 - Node.js installed
+- npm installed
+- A deployed instance of `contracts/BaseColorDrop.sol` on Base
+- The required environment values for your deployment
+
+## Setup
+
+Clone the repository:
+
+```bash
