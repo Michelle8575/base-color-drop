@@ -154,3 +154,11 @@ If Base Builder Code values change, update `NEXT_PUBLIC_DATA_SUFFIX`.
 Review deployment-specific metadata before publishing the app.
 
 ## Available Scripts
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
