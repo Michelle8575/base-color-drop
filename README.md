@@ -25,3 +25,13 @@ The app is designed to be easy to run locally, configure for deployment, and con
 - Wallet and contract interaction with Wagmi and Viem
 - Tailwind CSS styling
 - Environment-based configuration
+- Base attribution support through metadata and transaction data
+- Solidity contract source included in the repository
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- App Router
+- Wagmi
+- Viem
