@@ -172,3 +172,12 @@ npm run dev
 Before deploying the frontend, confirm that:
 
 - All public environment variables are set.
+- The contract address points to the intended Base deployment.
+- The Base app metadata has been replaced with deployment-specific values.
+- The Farcaster well-known file has been updated after domain signing.
+- Contract writes include the configured `dataSuffix`.
+- The public app URL matches `NEXT_PUBLIC_APP_URL`.
+
+## License
+
+No license information is included in the original project README.
